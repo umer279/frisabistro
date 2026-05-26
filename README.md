@@ -8,7 +8,7 @@ Sito React + Vite per [Frisà Bistrò](https://www.frisabistro.com), ristorante 
 - Vite 8 + Tailwind CSS v4
 - React Router (multi-pagina)
 - react-helmet-async (SEO)
-- vite-prerender-plugin (HTML statico per crawler)
+- react-helmet-async + sitemap/JSON-LD per SEO
 
 ## Sviluppo
 
@@ -38,6 +38,17 @@ Per riscaricare le immagini dal sito Wix:
 bash scripts/download-images.sh
 ```
 
-## Deploy
+## Deploy su Vercel
 
-Output in `dist/`. Configura redirect 301 da `/reservations` → `/prenota` sul hosting.
+Il progetto include `vercel.json` con:
+- **Framework:** Vite
+- **Output:** `dist`
+- **Rewrites SPA** per `/menu`, `/eventi`, ecc.
+- Redirect da `/reservations` → `/prenota`
+
+In Vercel Dashboard → Project Settings → Build & Development:
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
+
+Poi fai **Redeploy** (o push su `main`).
