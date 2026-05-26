@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #ebe4d8;
+  --color-charcoal: #1a1a1a;
+  --color-olive: #4a5d23;
+  --color-olive-light: #5c7330;
+  --color-terracotta: #c45c26;
+  --color-terracotta-light: #d97542;
+  --color-gold: #d4a853;
+  --color-gold-light: #e8c070;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-cream font-body text-charcoal antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-olive;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

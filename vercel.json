@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/reservations", "destination": "/prenota", "permanent": true },
+    { "source": "/event-list", "destination": "/eventi", "permanent": true }
+  ]
+}

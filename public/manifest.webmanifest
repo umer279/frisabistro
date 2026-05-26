@@ -1,0 +1,17 @@
+{
+  "name": "Frisà Bistrò",
+  "short_name": "Frisà",
+  "description": "Ristorante pugliese e jazz live a Milano Isola",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#4a5d23",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
